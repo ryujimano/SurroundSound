@@ -10,6 +10,7 @@ import UIKit
 import DZNEmptyDataSet
 import FontAwesomeKit
 import MediaPlayer
+import MultipeerConnectivity
 
 class AudioLibraryController: UIViewController {
     @IBOutlet weak var tableView: UITableView! {
@@ -27,8 +28,11 @@ class AudioLibraryController: UIViewController {
     var songs: [MPMediaItem] = []
     var songIndeces: Set<Int> = []
 
+    var session: MPSession = MPSession.shared
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        session.delegate = self
     }
 
     @IBAction func addSong(_ sender: Any) {
@@ -44,6 +48,17 @@ class AudioLibraryController: UIViewController {
         } else if let destination = segue.destination as? AudioListNavigationController {
             destination.navDelegate = self
             destination.songIndeces = self.songIndeces
+        }
+    }
+
+    func sendData(data: Data) {
+        if session.mcSession.connectedPeers.count > 0 {
+            do {
+                try session.mcSession.send(data, toPeers: session.mcSession.connectedPeers, with: .reliable)
+            } catch let error {
+                print(error.localizedDescription)
+                return
+            }
         }
     }
 }
@@ -89,4 +104,28 @@ extension AudioLibraryController: AudioListNavigationControllerDelegate {
         self.songs = songs
         self.tableView.reloadData()
     }
+}
+
+extension AudioLibraryController: MPSessionDelegate {
+    func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
+        print(state.rawValue)
+    }
+
+    func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
+
+    }
+
+    func browser(_ browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID, withDiscoveryInfo info: [String : String]?) {
+
+    }
+
+    func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {
+
+    }
+
+    func advertiser(_ advertiser: MCNearbyServiceAdvertiser, didReceiveInvitationFromPeer peerID: MCPeerID, withContext context: Data?, invitationHandler: @escaping (Bool, MCSession?) -> Void) {
+        invitationHandler(true, session.mcSession)
+    }
+
+
 }

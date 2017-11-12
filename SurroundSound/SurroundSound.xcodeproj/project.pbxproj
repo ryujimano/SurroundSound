@@ -21,6 +21,10 @@
 		46314ED91FB7B94000818858 /* AudioListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46314ED81FB7B94000818858 /* AudioListController.swift */; };
 		46314EDB1FB7E85F00818858 /* AudioListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46314EDA1FB7E85F00818858 /* AudioListNavigationController.swift */; };
 		46314EDD1FB8176700818858 /* AudioPlayerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46314EDC1FB8176600818858 /* AudioPlayerNavigationController.swift */; };
+		4671779B1FB84ECE005863D0 /* HostsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4671779A1FB84ECE005863D0 /* HostsController.swift */; };
+		4671779E1FB854A5005863D0 /* HostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4671779C1FB854A5005863D0 /* HostCell.swift */; };
+		4671779F1FB854A5005863D0 /* HostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4671779D1FB854A5005863D0 /* HostCell.xib */; };
+		467177A11FB85ACC005863D0 /* MPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467177A01FB85ACC005863D0 /* MPSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		46314ED81FB7B94000818858 /* AudioListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListController.swift; sourceTree = "<group>"; };
 		46314EDA1FB7E85F00818858 /* AudioListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListNavigationController.swift; sourceTree = "<group>"; };
 		46314EDC1FB8176600818858 /* AudioPlayerNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerNavigationController.swift; sourceTree = "<group>"; };
+		4671779A1FB84ECE005863D0 /* HostsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostsController.swift; sourceTree = "<group>"; };
+		4671779C1FB854A5005863D0 /* HostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostCell.swift; sourceTree = "<group>"; };
+		4671779D1FB854A5005863D0 /* HostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HostCell.xib; sourceTree = "<group>"; };
+		467177A01FB85ACC005863D0 /* MPSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPSession.swift; sourceTree = "<group>"; };
 		514469F03639D1CB1F4AD3C5 /* Pods-SurroundSound.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurroundSound.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SurroundSound/Pods-SurroundSound.debug.xcconfig"; sourceTree = "<group>"; };
 		891E772FABFCC8F42176767D /* Pods_SurroundSound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurroundSound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28E87D473CB9E748A062ECD /* Pods-SurroundSound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurroundSound.release.xcconfig"; path = "Pods/Target Support Files/Pods-SurroundSound/Pods-SurroundSound.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +107,7 @@
 				46314ED81FB7B94000818858 /* AudioListController.swift */,
 				46314EDA1FB7E85F00818858 /* AudioListNavigationController.swift */,
 				46314EDC1FB8176600818858 /* AudioPlayerNavigationController.swift */,
+				4671779A1FB84ECE005863D0 /* HostsController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -108,6 +117,8 @@
 			children = (
 				46314ED41FB7B0B800818858 /* AudioListCell.swift */,
 				46314ED51FB7B0B800818858 /* AudioListCell.xib */,
+				4671779C1FB854A5005863D0 /* HostCell.swift */,
+				4671779D1FB854A5005863D0 /* HostCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +133,7 @@
 		46314EC81FB779D300818858 /* MPConnectivity */ = {
 			isa = PBXGroup;
 			children = (
+				467177A01FB85ACC005863D0 /* MPSession.swift */,
 			);
 			path = MPConnectivity;
 			sourceTree = "<group>";
@@ -217,6 +229,7 @@
 				46314ED71FB7B0B800818858 /* AudioListCell.xib in Resources */,
 				46314EBE1FB7797500818858 /* LaunchScreen.storyboard in Resources */,
 				46314EBB1FB7797500818858 /* Assets.xcassets in Resources */,
+				4671779F1FB854A5005863D0 /* HostCell.xib in Resources */,
 				46314EB91FB7797500818858 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +298,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				46314EDB1FB7E85F00818858 /* AudioListNavigationController.swift in Sources */,
+				4671779B1FB84ECE005863D0 /* HostsController.swift in Sources */,
 				46314ED61FB7B0B800818858 /* AudioListCell.swift in Sources */,
+				467177A11FB85ACC005863D0 /* MPSession.swift in Sources */,
 				46314ED11FB7AFAC00818858 /* NSObject+Extension.swift in Sources */,
 				46314ED91FB7B94000818858 /* AudioListController.swift in Sources */,
 				46314EDD1FB8176700818858 /* AudioPlayerNavigationController.swift in Sources */,
@@ -293,6 +308,7 @@
 				46314ECC1FB7ADA900818858 /* AudioLibraryController.swift in Sources */,
 				46314ECA1FB787F300818858 /* AudioPlayerController.swift in Sources */,
 				46314ECF1FB7AF8D00818858 /* UITableView+Extension.swift in Sources */,
+				4671779E1FB854A5005863D0 /* HostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
