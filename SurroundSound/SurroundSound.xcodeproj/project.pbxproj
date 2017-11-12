@@ -7,21 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		315DF35C9C4A3F35E3A8962E /* Pods_SurroundSound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891E772FABFCC8F42176767D /* Pods_SurroundSound.framework */; };
 		46314EB41FB7797400818858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46314EB31FB7797400818858 /* AppDelegate.swift */; };
-		46314EB61FB7797400818858 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46314EB51FB7797400818858 /* ViewController.swift */; };
 		46314EB91FB7797500818858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46314EB71FB7797500818858 /* Main.storyboard */; };
 		46314EBB1FB7797500818858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46314EBA1FB7797500818858 /* Assets.xcassets */; };
 		46314EBE1FB7797500818858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46314EBC1FB7797500818858 /* LaunchScreen.storyboard */; };
+		46314ECA1FB787F300818858 /* AudioPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46314EC91FB787F300818858 /* AudioPlayerController.swift */; };
+		46314ECC1FB7ADA900818858 /* AudioLibraryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46314ECB1FB7ADA900818858 /* AudioLibraryController.swift */; };
+		46314ECF1FB7AF8D00818858 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46314ECE1FB7AF8D00818858 /* UITableView+Extension.swift */; };
+		46314ED11FB7AFAC00818858 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46314ED01FB7AFAC00818858 /* NSObject+Extension.swift */; };
+		46314ED61FB7B0B800818858 /* AudioListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46314ED41FB7B0B800818858 /* AudioListCell.swift */; };
+		46314ED71FB7B0B800818858 /* AudioListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46314ED51FB7B0B800818858 /* AudioListCell.xib */; };
+		46314ED91FB7B94000818858 /* AudioListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46314ED81FB7B94000818858 /* AudioListController.swift */; };
+		46314EDB1FB7E85F00818858 /* AudioListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46314EDA1FB7E85F00818858 /* AudioListNavigationController.swift */; };
+		46314EDD1FB8176700818858 /* AudioPlayerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46314EDC1FB8176600818858 /* AudioPlayerNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46314EB01FB7797400818858 /* SurroundSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurroundSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46314EB31FB7797400818858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46314EB51FB7797400818858 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		46314EB81FB7797500818858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46314EBA1FB7797500818858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46314EBD1FB7797500818858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46314EBF1FB7797500818858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46314EC91FB787F300818858 /* AudioPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerController.swift; sourceTree = "<group>"; };
+		46314ECB1FB7ADA900818858 /* AudioLibraryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioLibraryController.swift; sourceTree = "<group>"; };
+		46314ECE1FB7AF8D00818858 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		46314ED01FB7AFAC00818858 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		46314ED41FB7B0B800818858 /* AudioListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListCell.swift; sourceTree = "<group>"; };
+		46314ED51FB7B0B800818858 /* AudioListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioListCell.xib; sourceTree = "<group>"; };
+		46314ED81FB7B94000818858 /* AudioListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListController.swift; sourceTree = "<group>"; };
+		46314EDA1FB7E85F00818858 /* AudioListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListNavigationController.swift; sourceTree = "<group>"; };
+		46314EDC1FB8176600818858 /* AudioPlayerNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerNavigationController.swift; sourceTree = "<group>"; };
+		514469F03639D1CB1F4AD3C5 /* Pods-SurroundSound.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurroundSound.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SurroundSound/Pods-SurroundSound.debug.xcconfig"; sourceTree = "<group>"; };
+		891E772FABFCC8F42176767D /* Pods_SurroundSound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurroundSound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28E87D473CB9E748A062ECD /* Pods-SurroundSound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurroundSound.release.xcconfig"; path = "Pods/Target Support Files/Pods-SurroundSound/Pods-SurroundSound.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315DF35C9C4A3F35E3A8962E /* Pods_SurroundSound.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +61,8 @@
 			children = (
 				46314EB21FB7797400818858 /* SurroundSound */,
 				46314EB11FB7797400818858 /* Products */,
+				A09F0EBC8B27BAA271773DC7 /* Pods */,
+				632C7F5B8DD75718A3158333 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +77,79 @@
 		46314EB21FB7797400818858 /* SurroundSound */ = {
 			isa = PBXGroup;
 			children = (
+				46314ECD1FB7AF5D00818858 /* Extensions */,
+				46314EC81FB779D300818858 /* MPConnectivity */,
+				46314EC71FB779CA00818858 /* Models */,
+				46314EC61FB779C200818858 /* Views */,
+				46314EC51FB779BB00818858 /* View Controllers */,
 				46314EB31FB7797400818858 /* AppDelegate.swift */,
-				46314EB51FB7797400818858 /* ViewController.swift */,
 				46314EB71FB7797500818858 /* Main.storyboard */,
 				46314EBA1FB7797500818858 /* Assets.xcassets */,
 				46314EBC1FB7797500818858 /* LaunchScreen.storyboard */,
 				46314EBF1FB7797500818858 /* Info.plist */,
 			);
 			path = SurroundSound;
+			sourceTree = "<group>";
+		};
+		46314EC51FB779BB00818858 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				46314EC91FB787F300818858 /* AudioPlayerController.swift */,
+				46314ECB1FB7ADA900818858 /* AudioLibraryController.swift */,
+				46314ED81FB7B94000818858 /* AudioListController.swift */,
+				46314EDA1FB7E85F00818858 /* AudioListNavigationController.swift */,
+				46314EDC1FB8176600818858 /* AudioPlayerNavigationController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		46314EC61FB779C200818858 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46314ED41FB7B0B800818858 /* AudioListCell.swift */,
+				46314ED51FB7B0B800818858 /* AudioListCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46314EC71FB779CA00818858 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		46314EC81FB779D300818858 /* MPConnectivity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MPConnectivity;
+			sourceTree = "<group>";
+		};
+		46314ECD1FB7AF5D00818858 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46314ECE1FB7AF8D00818858 /* UITableView+Extension.swift */,
+				46314ED01FB7AFAC00818858 /* NSObject+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		632C7F5B8DD75718A3158333 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				891E772FABFCC8F42176767D /* Pods_SurroundSound.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A09F0EBC8B27BAA271773DC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				514469F03639D1CB1F4AD3C5 /* Pods-SurroundSound.debug.xcconfig */,
+				A28E87D473CB9E748A062ECD /* Pods-SurroundSound.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46314EC21FB7797500818858 /* Build configuration list for PBXNativeTarget "SurroundSound" */;
 			buildPhases = (
+				45D62DF40784F2728951AF17 /* [CP] Check Pods Manifest.lock */,
 				46314EAC1FB7797400818858 /* Sources */,
 				46314EAD1FB7797400818858 /* Frameworks */,
 				46314EAE1FB7797400818858 /* Resources */,
+				5347BD03236CE9CAE784FDDD /* [CP] Embed Pods Frameworks */,
+				26F21D030753830BD3F1C593 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46314ED71FB7B0B800818858 /* AudioListCell.xib in Resources */,
 				46314EBE1FB7797500818858 /* LaunchScreen.storyboard in Resources */,
 				46314EBB1FB7797500818858 /* Assets.xcassets in Resources */,
 				46314EB91FB7797500818858 /* Main.storyboard in Resources */,
@@ -131,13 +223,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26F21D030753830BD3F1C593 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SurroundSound/Pods-SurroundSound-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45D62DF40784F2728951AF17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SurroundSound-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5347BD03236CE9CAE784FDDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SurroundSound/Pods-SurroundSound-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SurroundSound/Pods-SurroundSound-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		46314EAC1FB7797400818858 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46314EB61FB7797400818858 /* ViewController.swift in Sources */,
+				46314EDB1FB7E85F00818858 /* AudioListNavigationController.swift in Sources */,
+				46314ED61FB7B0B800818858 /* AudioListCell.swift in Sources */,
+				46314ED11FB7AFAC00818858 /* NSObject+Extension.swift in Sources */,
+				46314ED91FB7B94000818858 /* AudioListController.swift in Sources */,
+				46314EDD1FB8176700818858 /* AudioPlayerNavigationController.swift in Sources */,
 				46314EB41FB7797400818858 /* AppDelegate.swift in Sources */,
+				46314ECC1FB7ADA900818858 /* AudioLibraryController.swift in Sources */,
+				46314ECA1FB787F300818858 /* AudioPlayerController.swift in Sources */,
+				46314ECF1FB7AF8D00818858 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +427,7 @@
 		};
 		46314EC31FB7797500818858 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 514469F03639D1CB1F4AD3C5 /* Pods-SurroundSound.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +443,7 @@
 		};
 		46314EC41FB7797500818858 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A28E87D473CB9E748A062ECD /* Pods-SurroundSound.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
